@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Letras Vivas · Repositorio Web</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="ambient">
+    <span class="float f1">📚</span>
+    <span class="float f2">✒️</span>
+    <span class="float f3">🎭</span>
+    <span class="float f4">📝</span>
+    <span class="float f5">✨</span>
+    <span class="float f6">📖</span>
+  </div>
+
+  <header class="hero">
+    <nav class="navbar">
+      <div class="brand">
+        <div class="brand-icon">📚</div>
+        <div>
+          <strong>Letras Vivas</strong>
+          <span>Repositorio de proyectos web</span>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="#galeria">Galería</a>
+        <a href="#creditos">Créditos</a>
+      </div>
+    </nav>
+
+    <section class="hero-grid">
+      <div class="hero-copy">
+        <span class="badge">Licenciatura en Literatura y Lengua Castellana</span>
+        <h1>Repositorio de aplicaciones educativas de Lengua y Literatura</h1>
+        <p>
+          Galería web para organizar, visibilizar y consultar los trabajos publicados por estudiantes en GitHub Pages.
+          Cada tarjeta incluye una imagen representativa, título, autoría, tema, descripción y enlace directo a la aplicación.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#galeria">Explorar trabajos</a>
+          <a class="btn secondary" href="#creditos">Ver créditos</a>
+        </div>
+      </div>
+
+      <aside class="hero-panel">
+        <div class="hero-orb">✒️</div>
+        <h2>Literatura en la web</h2>
+        <p>Lectura, escritura, narrativa, poesía, oralidad y tecnología educativa reunidas en una galería académica.</p>
+        <div class="stats">
+          <div><strong id="totalHero">0</strong><span>Trabajos</span></div>
+          <div><strong id="temasHero">0</strong><span>Temas</span></div>
+          <div><strong id="autoresHero">0</strong><span>Autorías</span></div>
+        </div>
+      </aside>
+    </section>
+  </header>
+
+  <main>
+    <section class="gallery" id="galeria">
+      <div class="section-head">
+        <span class="badge">Galería de trabajos</span>
+        <h2>Proyectos publicados en GitHub</h2>
+        <p>
+          Se omitieron enlaces repetidos y se dejó una sola tarjeta por trabajo. Use el buscador y el filtro
+          para localizar proyectos por título, autor, tema o etiqueta.
+        </p>
+      </div>
+
+      <div class="tools">
+        <div>
+          <label for="searchInput">🔎 Buscar trabajo</label>
+          <input id="searchInput" type="search" placeholder="Buscar por título, autor, tema, descripción o etiqueta..." />
+        </div>
+        <div>
+          <label for="topicFilter">📌 Tema</label>
+          <select id="topicFilter">
+            <option value="todos">Todos los temas</option>
+          </select>
+        </div>
+        <button class="btn clean" id="clearFilters">Limpiar filtros</button>
+      </div>
+
+      <div class="summary">
+        <div class="summary-card"><span>📦</span><div><strong id="total">0</strong><small>trabajos únicos</small></div></div>
+        <div class="summary-card"><span>📚</span><div><strong id="temas">0</strong><small>temas registrados</small></div></div>
+        <div class="summary-card"><span>👥</span><div><strong id="autores">0</strong><small>autorías visibles</small></div></div>
+      </div>
+
+      <div class="cards-grid" id="cardsGrid"></div>
+
+      <div class="empty" id="emptyState">
+        <div>🔍</div>
+        <h3>No se encontraron trabajos</h3>
+        <p>Pruebe con otra palabra o limpie los filtros.</p>
+      </div>
+    </section>
+
+    <section class="credits-section" id="creditos">
+      <span class="badge">Créditos del repositorio</span>
+      <h2>Letras Vivas</h2>
+      <p>
+        Repositorio web académico para socializar productos digitales elaborados por estudiantes de la
+        Licenciatura en Literatura y Lengua Castellana.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>Letras Vivas · Repositorio Web</strong>
+      <p>Licenciatura en Literatura y Lengua Castellana · Proyectos educativos publicados en GitHub Pages.</p>
+    </div>
+    <a class="btn secondary" href="#galeria">Volver a la galería</a>
+  </footer>
+
+  <div class="toast" id="toast">Enlace copiado</div>
+
+  <script src="assets/js/proyectos.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

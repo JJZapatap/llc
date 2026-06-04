@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ff9f1c"/>
+      <stop offset="58%" stop-color="#8a3ffc"/>
+      <stop offset="100%" stop-color="#ffe66d"/>
+    </linearGradient>
+    <radialGradient id="r" cx="30%" cy="20%" r="75%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".42"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity=".08"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity=".20"/>
+    </radialGradient>
+    <filter id="s"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity=".35"/></filter>
+  </defs>
+  <rect width="1200" height="760" rx="58" fill="url(#g)"/>
+  <rect width="1200" height="760" rx="58" fill="url(#r)"/>
+  <g opacity=".22">
+    <circle cx="170" cy="130" r="85" fill="#fff"/>
+    <circle cx="1030" cy="145" r="125" fill="#fff"/>
+    <circle cx="1035" cy="620" r="170" fill="#fff"/>
+    <circle cx="145" cy="650" r="125" fill="#fff"/>
+  </g>
+  <g opacity=".26" stroke="#fff" stroke-width="5" fill="none">
+    <path d="M-80 560 C220 430 360 690 650 540 S980 430 1290 560"/>
+    <path d="M-80 610 C220 480 360 740 650 590 S980 480 1290 610"/>
+    <path d="M-80 220 C200 80 430 330 680 180 S960 100 1280 240"/>
+  </g>
+  <g filter="url(#s)">
+    <rect x="95" y="105" width="1010" height="550" rx="42" fill="#ffffff" opacity=".14" stroke="#ffffff" stroke-opacity=".38" stroke-width="3"/>
+    <text x="150" y="235" font-size="110" font-family="Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji, sans-serif">🏙️</text>
+    <text x="150" y="340" font-size="68" font-weight="900" fill="#ffffff" font-family="Georgia,serif">Textópolis</text>
+    <text x="150" y="405" font-size="32" font-weight="700" fill="#f7f7ff" font-family="Segoe UI,Arial,sans-serif">Tipos de texto</text>
+    <line x1="150" y1="455" x2="950" y2="455" stroke="#ffffff" stroke-width="3" opacity=".35"/>
+    <text x="150" y="515" font-size="34" font-weight="800" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif">Licenciatura en Literatura y Lengua Castellana</text>
+    <text x="150" y="575" font-size="28" fill="#f7f7ff" opacity=".86" font-family="Segoe UI,Arial,sans-serif">Proyecto web interactivo · GitHub Pages</text>
+  </g>
+</svg>
